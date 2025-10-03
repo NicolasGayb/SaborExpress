@@ -21,8 +21,7 @@ def finalizar_app():
     exit()
 
 def escolher_opcao():
-    opcao_usuario = input('Escolha uma opção: ')
-    opcao_usuario = int(opcao_usuario)
+    opcao_usuario = int(input('Escolha uma opção: '))
 
     if opcao_usuario == 1:
         cadastro_restaurante()
@@ -31,8 +30,11 @@ def escolher_opcao():
         print('Listar restaurantes')
     elif opcao_usuario == 3:
         print('Ativar restaurante')
-    else:
+    elif opcao_usuario == 4:
         finalizar_app()
+    else:
+        print('Opção inválida! Tente novamente.\n')
+        escolher_opcao()
 
 def main():
     os.system('cls')
