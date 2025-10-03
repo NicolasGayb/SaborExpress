@@ -1,4 +1,10 @@
-print('Bem-vindo ao Sabor Express!\n')
+print("""
+██████████████████████████████████████████████████████████████████████████
+█─▄▄▄▄██▀▄─██▄─▄─▀█─▄▄─█▄─▄▄▀███▄─▄▄─█▄─▀─▄█▄─▄▄─█▄─▄▄▀█▄─▄▄─█─▄▄▄▄█─▄▄▄▄█
+█▄▄▄▄─██─▀─███─▄─▀█─██─██─▄─▄████─▄█▀██▀─▀███─▄▄▄██─▄─▄██─▄█▀█▄▄▄▄─█▄▄▄▄─█
+▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▄▄▀▀▄▄▄▄▀▄▄▀▄▄▀▀▀▄▄▄▄▄▀▄▄█▄▄▀▄▄▄▀▀▀▄▄▀▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀
+
+""")
 
 print('1 - Cadastrar restaurante')
 print('2 - Listar restaurantes')
@@ -6,4 +12,4 @@ print('3 - Ativar restaurante')
 print('4 - Sair\n')
 
 opcao_usuario = input('Escolha uma opção: ')
-print('Você escolheu a opção:', opcao_usuario)
+print(f'Você escolheu a opção: {opcao_usuario}\n')
