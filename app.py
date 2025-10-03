@@ -34,31 +34,35 @@ def escolher_opcao():
 
 def opcao_invalida():
     print('Opção inválida! Tente novamente.\n')
-    escolher_opcao()
+    voltar_menu()
+
+def voltar_menu():
+    input('\nPressione ENTER para voltar ao menu principal...')
+    main()
+
+def exibir_subtitulo(texto):
+    os.system('cls')
+    print(texto)
+    print()
 
 def cadastro_restaurante():
-    os.system('cls')
-    print('Cadastro de novos restaurantes\n')
+    exibir_subtitulo('Cadastro de novos restaurantes')
     nome_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
 
     restaurantes.append(nome_restaurante)
     print(f'O restaurante {nome_restaurante} foi cadastrado com sucesso!\n')
-    input('\nPressione ENTER para voltar ao menu principal...')
-    main()
+    voltar_menu()
 
 def listar_restaurantes():
-    os.system('cls')
-    print('Listando os restaurantes cadastrados...\n')
+    exibir_subtitulo('Listagem de restaurantes')
 
     for restaurante in restaurantes:
         print(f'- {restaurante}')
 
-    input('\nPressione ENTER para voltar ao menu principal...')
-    main()
+    voltar_menu()
 
 def finalizar_app():
-    os.system('cls')
-    print('Finalizando o app...\n')
+    exibir_subtitulo('Finalizando o app...')
     exit()
 
 def main():
